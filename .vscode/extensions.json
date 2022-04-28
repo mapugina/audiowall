@@ -4,6 +4,11 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+		"eg2.vscode-npm-script",
+		"editorconfig.editorconfig",
+		"johnpapa.angular-essentials",
+		"eamodio.gitlens",
+		"mhutchie.git-graph"
   ]
 }
