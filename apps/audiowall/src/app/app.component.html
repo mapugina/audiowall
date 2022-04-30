@@ -1,1 +1,3 @@
-<audiowall-nx-welcome></audiowall-nx-welcome>
+<!-- <audiowall-instrument filepath="assets/bassoon_01.wav">Bassoon</audiowall-instrument> -->
+<div *ngFor="let instrument of instruments"><button (click)="toggleVolume(instrument)">{{instrument}}</button></div>
+<div><button (click)="playAll()">{{playing ? 'Restart' : 'Play All'}}</button><button (click)="stopAll()" *ngIf="playing">Stop</button><button (click)="muteAll()">Mute</button><button (click)="hearAll()">Hear All</button></div>
