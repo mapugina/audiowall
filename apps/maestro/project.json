@@ -19,7 +19,8 @@
         "assets": [
           "apps/maestro/src/favicon.ico",
           "apps/maestro/src/assets",
-          "apps/maestro/src/manifest.webmanifest"
+          "apps/maestro/src/manifest.webmanifest",
+          "apps/maestro/src/_redirects"
         ],
         "styles": [
           "apps/maestro/src/styles.scss"
