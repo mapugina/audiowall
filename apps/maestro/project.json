@@ -1,24 +1,21 @@
 {
   "projectType": "application",
-  "root": "apps/audiowall",
-  "sourceRoot": "apps/audiowall/src",
+  "root": "apps/maestro",
+  "sourceRoot": "apps/maestro/src",
   "prefix": "audiowall",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/audiowall",
-        "index": "apps/audiowall/src/index.html",
-        "main": "apps/audiowall/src/main.ts",
-        "polyfills": "apps/audiowall/src/polyfills.ts",
-        "tsConfig": "apps/audiowall/tsconfig.app.json",
+        "outputPath": "dist/apps/maestro",
+        "index": "apps/maestro/src/index.html",
+        "main": "apps/maestro/src/main.ts",
+        "polyfills": "apps/maestro/src/polyfills.ts",
+        "tsConfig": "apps/maestro/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/audiowall/src/favicon.ico",
-          "apps/audiowall/src/assets"
-        ],
-        "styles": ["apps/audiowall/src/styles.scss"],
+        "assets": ["apps/maestro/src/favicon.ico", "apps/maestro/src/assets"],
+        "styles": ["apps/maestro/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -37,8 +34,8 @@
           ],
           "fileReplacements": [
             {
-              "replace": "apps/audiowall/src/environments/environment.ts",
-              "with": "apps/audiowall/src/environments/environment.prod.ts"
+              "replace": "apps/maestro/src/environments/environment.ts",
+              "with": "apps/maestro/src/environments/environment.prod.ts"
             }
           ],
           "outputHashing": "all"
@@ -58,10 +55,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "audiowall:build:production"
+          "browserTarget": "maestro:build:production"
         },
         "development": {
-          "browserTarget": "audiowall:build:development"
+          "browserTarget": "maestro:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -69,23 +66,20 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "audiowall:build"
+        "browserTarget": "maestro:build"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "apps/audiowall/**/*.ts",
-          "apps/audiowall/**/*.html"
-        ]
+        "lintFilePatterns": ["apps/maestro/**/*.ts", "apps/maestro/**/*.html"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/audiowall"],
+      "outputs": ["coverage/apps/maestro"],
       "options": {
-        "jestConfig": "apps/audiowall/jest.config.ts",
+        "jestConfig": "apps/maestro/jest.config.ts",
         "passWithNoTests": true
       }
     }

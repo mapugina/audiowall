@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'audiowall',
+  displayName: 'maestro',
   preset: '../../jest.preset.ts',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -8,7 +8,7 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../coverage/apps/audiowall',
+  coverageDirectory: '../../coverage/apps/maestro',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
   },

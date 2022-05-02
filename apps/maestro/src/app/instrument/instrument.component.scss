@@ -1,0 +1,17 @@
+.instrument-container {
+  > .instrument-icon {
+    filter: invert(0.4); // not hovered & not selected
+    &.is-loud {
+      filter: invert(0.2); // not hovered & selected
+    }
+  }
+
+  &:hover {
+    > .instrument-icon {
+      filter: invert(0.25); // hovered & not selected
+      &.is-loud {
+        filter: invert(0); // hovered & selected
+      }
+    }
+  }
+}

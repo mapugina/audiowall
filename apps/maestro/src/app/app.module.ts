@@ -6,11 +6,7 @@ import { InstrumentComponent } from './instrument/instrument.component';
 import { OrchestraComponent } from './orchestra/orchestra.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    InstrumentComponent,
-    OrchestraComponent,
-  ],
+  declarations: [AppComponent, InstrumentComponent, OrchestraComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

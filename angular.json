@@ -1,6 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "audiowall": "apps/audiowall"
+    "maestro": "apps/maestro"
   }
 }

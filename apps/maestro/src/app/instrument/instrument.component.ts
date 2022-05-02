@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Howl } from 'howler';
 import { InstrumentHowlsService } from '../instrument-howls.service';
-import { Instrument } from "../Instrument";
+import { Instrument } from '../Instrument';
 
 @Component({
   selector: 'audiowall-instrument',
