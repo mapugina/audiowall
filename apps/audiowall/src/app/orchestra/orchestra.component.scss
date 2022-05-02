@@ -1,0 +1,66 @@
+.instrument-container {
+  position: relative;
+
+  min-width: 320px;
+  margin-top: 25px;
+
+  > #viola {
+    position: absolute;
+    top: 9px;
+    left: 26px;
+  }
+
+  > #trumpet {
+    position: absolute;
+    top: 0;
+    left: 122px;
+  }
+
+  > #timpani {
+    position: absolute;
+    top: 27px;
+    left: 234px;
+  }
+
+  > #oboe {
+    position: absolute;
+    left: 15px;
+    top: 120px;
+  }
+
+  > #flute {
+    position: absolute;
+    left: 145px;
+    top: 129px;
+  }
+  
+  > #horn {
+    position: absolute;
+    left: 22px;
+    top: 263px;
+  }
+
+  > #bassoon  {
+    position: absolute;
+    left: 110px;
+    top: 213px;
+  }
+
+  > #cello {
+    position: absolute;
+    left: 231px;
+    top: 202px;
+  }
+
+  > #violin {
+    position: absolute;
+    left: 33px;
+    top: 380px;
+  }
+
+  > #clarinet {
+    position: absolute;
+    top: 376px;
+    left: 166px;
+  }
+}

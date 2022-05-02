@@ -1,8 +1,12 @@
-<audio *ngIf="filepath" controls #song>
-  <source [src]="filepath" type="audio/wav">
-  <source [src]="filepath" type="audio/wav">
-</audio>
-<div>
-  {{filepath}}
-  <ng-content></ng-content>
+<div class="instrument-container">
+  <img
+    class="instrument-icon"
+    *ngIf="_instrument"
+    [src]="'assets/icons/' + _instrument + '.svg'"
+    [alt]="_instrument + ' icon'"
+    (click)="toggle(_instrument)"
+    [ngClass]="{ 'is-loud': isLoud }"
+    [height]="height"
+    [width]="width"
+  />
 </div>

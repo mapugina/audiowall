@@ -1,7 +1,6 @@
 {
   "version": 2,
   "projects": {
-    "audiowall": "apps/audiowall",
-    "audiowall-e2e": "apps/audiowall-e2e"
+    "audiowall": "apps/audiowall"
   }
 }
