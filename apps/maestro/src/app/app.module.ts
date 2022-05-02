@@ -7,6 +7,8 @@ import { OrchestraComponent } from './orchestra/orchestra.component';
 import { MaestrowallComponent } from './maestrowall/maestrowall.component';
 import { RouterModule } from '@angular/router';
 import { AttributionsComponent } from './attributions/attributions.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,12 @@ import { AttributionsComponent } from './attributions/attributions.component';
         component: AttributionsComponent
       },
     ]),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/maestro",
         "index": "apps/maestro/src/index.html",
@@ -14,9 +16,17 @@
         "polyfills": "apps/maestro/src/polyfills.ts",
         "tsConfig": "apps/maestro/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/maestro/src/favicon.ico", "apps/maestro/src/assets"],
-        "styles": ["apps/maestro/src/styles.scss"],
-        "scripts": []
+        "assets": [
+          "apps/maestro/src/favicon.ico",
+          "apps/maestro/src/assets",
+          "apps/maestro/src/manifest.webmanifest"
+        ],
+        "styles": [
+          "apps/maestro/src/styles.scss"
+        ],
+        "scripts": [],
+        "serviceWorker": true,
+        "ngswConfigPath": "apps/maestro/ngsw-config.json"
       },
       "configurations": {
         "production": {
@@ -72,12 +82,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/maestro/**/*.ts", "apps/maestro/**/*.html"]
+        "lintFilePatterns": [
+          "apps/maestro/**/*.ts",
+          "apps/maestro/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/maestro"],
+      "outputs": [
+        "coverage/apps/maestro"
+      ],
       "options": {
         "jestConfig": "apps/maestro/jest.config.ts",
         "passWithNoTests": true
