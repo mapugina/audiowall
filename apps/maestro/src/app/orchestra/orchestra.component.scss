@@ -1,4 +1,8 @@
-.instrument-container {
+.instruments-container {
+
+  display: flex;
+  justify-content: center;
+
   position: relative;
 
   min-width: 320px;

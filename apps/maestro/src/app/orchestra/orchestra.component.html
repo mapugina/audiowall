@@ -1,5 +1,5 @@
 <div
-  class="instrument-container"
+  class="instruments-container"
   *ngIf="instrumentHowlsService.allLoaded$ | async; else loading"
 >
   <audiowall-instrument
@@ -63,4 +63,4 @@
     [width]="113"
   ></audiowall-instrument>
 </div>
-<ng-template #loading>Loading...</ng-template>
+<ng-template #loading>Warming up the orchestra...</ng-template>
